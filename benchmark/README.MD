@@ -12,10 +12,10 @@ The tests were performed as follows:
 
 **Access Links:**
 
-React-Cli:   https://mlsamazons3testepublish.s3.amazonaws.com/reactCli/index.html
+React-Cli:   https://mlsamazons3testepublish.s3.amazonaws.com/reactCli/index.html       
 React-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/react3/index.html
 
-Vue-Cli:    https://mlsamazons3testepublish.s3.amazonaws.com/vueCli/index.html   
+Vue-Cli:    https://mlsamazons3testepublish.s3.amazonaws.com/vueCli/index.html
 Vue-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/vue/index.html
 
 **The versions used were:**
@@ -30,7 +30,7 @@ Vue-Cdn: Vue.js v2.6.10
 **Test environment:**
 
   OS: Linux 5.0 Ubuntu 18.04.3 LTS (Bionic Beaver)
-  CPU: (2) x64 Intel(R) Celeron(R) CPU  J1800  @ 2.41GHz
+  CPU: (2) x64 Intel(R) Celeron(R) CPU  J1800  @ 2.41GHz       
   Browsers: Chrome: 78.0.3904.87 
 
 
