@@ -1,0 +1,38 @@
+<html>
+  <head>	
+  </head>
+   <body>
+     <div id="root"></div>
+   </body>
+   <script  src="https://unpkg.com/react@16/umd/react.production.min.js" ></script>
+   <script  src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+   <script type="text/babel">
+
+
+
+	function App(props) {
+	  const numbers = props.numbers;
+	  
+	  const listItems = numbers.map((number) =>
+	    <li>{number.cod}</li>
+	  );
+
+	  return (
+	    <ul>{listItems}</ul>
+	  );
+
+	}
+
+
+	const numbers = [{"cod":0},{"cod":1}]
+	ReactDOM.render(
+	  <App numbers={numbers} />,
+	  document.getElementById('root')
+	);
+
+
+
+</script>
+</html>
+
