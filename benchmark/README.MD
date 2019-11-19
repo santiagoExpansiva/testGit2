@@ -48,14 +48,14 @@ Vue-Cdn: Vue.js v2.6.10
 
 |  |Load Time|First Byte|Start Render|First Contentful Paint|Speed Index|Time|Requests|Bytes In|
 |--|---------|----------|------------|----------------------|-----------|----|--------|--------|
-|React-Cdn|1.010s|0.245s|2.100s|2.051s|2.100s|1.010s|5|167 KB|
-|Vue-Cdn|1.245s|0.295s|2.100s|2.150s|2.100s|1.245s|2|160 KB|
+|React|1.010s|0.245s|2.100s|2.051s|2.100s|1.010s|5|167 KB|
+|Vue|1.245s|0.295s|2.100s|2.150s|2.100s|1.245s|2|160 KB|
 
 
 2-https://app.testedeperformance.com/
 
 |   |Server Response|Total size|Total time|First byte|Requisitions|
 |---|---------------|----------|----------|----------|------------|
-|React-Cdn|0.173 s|167 KB|1.043 s|0.221 s|2|
-|Vue-Cdn|0.166 s|160 KB|1.174 s|0.254 s|2|
+|React|0.173 s|167 KB|1.043 s|0.221 s|2|
+|Vue|0.166 s|160 KB|1.174 s|0.254 s|2|
 
