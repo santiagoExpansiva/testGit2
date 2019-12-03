@@ -13,10 +13,10 @@ The tests were performed as follows:
 **Access Links:**
 
 React-Cli:   https://mlsamazons3testepublish.s3.amazonaws.com/reactCli/index.html       
-React-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/react3/index.html
+React-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/react3/example1.html
 
 Vue-Cli:    https://mlsamazons3testepublish.s3.amazonaws.com/vueCli/index.html         
-Vue-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/vue/index.html
+Vue-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/vue/example1.html
 
 **The versions used were:**
 
