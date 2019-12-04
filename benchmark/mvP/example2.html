@@ -1,0 +1,185 @@
+<html>
+  <head>	
+  </head>
+   <body>
+     <div data-mlsid="l1">
+	</div>
+	<div data-mlsid="l2" class="">
+	</div>
+	<div data-mlsid="l3">
+	</div>
+	<ul data-mlsid="l4">
+    		<li data-mlsid="l5">{{contact.cod }}</li>
+	</ul>
+  </body>
+<script>
+let contacts = [{"cod":0},{"cod":1},{"cod":2},{"cod":3},{"cod":4},{"cod":5},{"cod":6},{"cod":7},{"cod":8},{"cod":9},{"cod":10},{"cod":11},{"cod":12},{"cod":13},{"cod":14},{"cod":15},{"cod":16},{"cod":17},{"cod":18},{"cod":19},{"cod":20},{"cod":21},{"cod":22},{"cod":23},{"cod":24},{"cod":25},{"cod":26},{"cod":27},{"cod":28},{"cod":29},{"cod":30},{"cod":31},{"cod":32},{"cod":33},{"cod":34},{"cod":35},{"cod":36},{"cod":37},{"cod":38},{"cod":39},{"cod":40},{"cod":41},{"cod":42},{"cod":43},{"cod":44},{"cod":45},{"cod":46},{"cod":47},{"cod":48},{"cod":49},{"cod":50}];
+
+var p1;
+(function (p1) {
+    function add(path) {
+        if (!path) {
+            p1.rows_contact.addAll();
+        }
+    }
+    p1.add = add;
+    function upd(path) {
+    }
+    p1.upd = upd;
+    function del(path) {
+    }
+    p1.del = del;
+    function getEl(ref, el) {
+        let rc = el.querySelector("[data-mlsid=" + ref + "]");
+        if (!rc) {
+            rc = document.createElement("div");
+            console.log("error, element not found data-mlsid='" + ref + "' in ", el);
+        }
+        return rc;
+    }
+    p1.getEl = getEl;
+    p1.m1 = new class extends Map {
+        add(cls, f1) {
+            cls.forEach((cl) => {
+                if (this.has(cl)) {
+                    let ar = this.get(cl);
+                    if (ar.indexOf(f1) < 0) {
+                        ar.push(f1);
+                        this.set(cl, ar);
+                    }
+                }
+                else {
+                    let ar = [f1];
+                    this.set(cl, ar);
+                }
+            });
+        }
+        del(cls, fs) {
+            if (!fs) {
+                fs = [];
+            }
+            cls.forEach((cl) => {
+                let ar = this.get(cl);
+                for (let i = ar.length - 1; i >= 0; i--) {
+                    let f1 = ar[i];
+                    fs.forEach((f2) => {
+                        if (f1 === f2) {
+                            ar = ar.splice(i, 1);
+                        }
+                    });
+                }
+                if (ar.length < 1) {
+                    this.delete(cl);
+                }
+                else {
+                    this.set(cl, ar);
+                }
+            });
+        }
+        upd(cl, row) {
+            if (!this.has(cl)) {
+                return;
+            }
+            let ar = this.get(cl);
+            ar.forEach((f1) => {
+                if (!row) {
+                    f1(cl);
+                }
+                else {
+                    f1(row);
+                }
+            });
+        }
+    };
+    class RowBase {
+        constructor() {
+            this.row_root = undefined;
+            this.row_clone = undefined;
+            this.row_temp = undefined;
+            this.temp_el = {};
+        }
+        moveChilds(src, target) {
+            while (src.firstChild) {
+                let node = src.firstChild;
+                node.remove();
+                target.appendChild(node);
+            }
+        }
+        markRow(clRow) {
+            Object.keys(this.temp_el).forEach((key) => {
+                this.temp_el[key]["mlsRow"] = clRow;
+            });
+        }
+        clear() {
+            while (this.row_root.lastChild) {
+                let node = this.row_root.lastChild;
+                if (node["mlsRow"]) {
+                    let fs = Object.keys(this.temp_el).map((key) => { return this.temp_el[key]; });
+                    p1.m1.del([node["mlsRow"]], fs);
+                    delete node["mlsRow"];
+                }
+                this.row_root.removeChild(node);
+            }
+        }
+    }
+    class Blk_root {
+        constructor(elRoot) {
+            this.init();
+        }
+        init() {
+        }
+    }
+    p1.Blk_root = Blk_root;
+    class Rows_contact extends RowBase {
+        constructor(elRoot) {
+            super();
+            this.rows = [];
+            this.temp_el = {
+                l5: undefined,
+            };
+            this.row_root = getEl("l4", elRoot);
+            this.row_clone = this.row_root.cloneNode(false);
+            this.moveChilds(this.row_root, this.row_clone);
+        }
+        f5() {
+            let row = this["mlsRow"];
+            let contact = row.contact;
+            this.innerText = contact.cod;
+        }
+        createRowTemp(contact, index, array) {
+            this.row_temp = this.row_clone.cloneNode(true);
+            this.temp_el.l5 = getEl("l5", this.row_temp);
+            let row = { contact, index, array
+            };
+            this.rows.push(row);
+            this.markRow(row);
+            p1.m1.add([contact], this.f5.bind(this.temp_el.l5));
+            this.moveChilds(this.row_temp, this.row_root);
+        }
+        ;
+        addAll() {
+            this.clear();
+            contacts.forEach(this.add, this);
+        }
+        add(contact, index, array) {
+            this.createRowTemp(contact, index, array);
+            p1.m1.upd(contact, contact);
+        }
+    }
+    p1.Rows_contact = Rows_contact;
+    function set_state(old, row, prop, value) {
+        if (!row || !prop || !row[prop]) {
+            console.log("error on set_state: ", row, prop, value);
+            return;
+        }
+        row[prop] = value;
+        p1.m1.upd(row, row);
+    }
+    p1.set_state = set_state;
+    p1.rows_contact = new Rows_contact(document.body);
+    p1.blk_root = new p1.Blk_root(document.body);
+})(p1 || (p1 = {}));
+
+p1.add();
+</script>
+</html>

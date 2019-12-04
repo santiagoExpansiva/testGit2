@@ -1,0 +1,23 @@
+<html>
+  <head>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <ul id="app">
+     <li v-for="item in items">
+      {{ item.cod }}
+     </li>
+    </ul>  
+  </body>
+  <script type="text/javascript">
+    var array = [{"cod":0},{"cod":1},{"cod":2},{"cod":3},{"cod":4},{"cod":5},{"cod":6},{"cod":7},{"cod":8},{"cod":9},{"cod":10},{"cod":11},{"cod":12},{"cod":13},{"cod":14},{"cod":15},{"cod":16},{"cod":17},{"cod":18},{"cod":19},{"cod":20},{"cod":21},{"cod":22},{"cod":23},{"cod":24},{"cod":25},{"cod":26},{"cod":27},{"cod":28},{"cod":29},{"cod":30},{"cod":31},{"cod":32},{"cod":33},{"cod":34},{"cod":35},{"cod":36},{"cod":37},{"cod":38},{"cod":39},{"cod":40},{"cod":41},{"cod":42},{"cod":43},{"cod":44},{"cod":45},{"cod":46},{"cod":47},{"cod":48},{"cod":49},{"cod":50}];
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        items: array
+      }
+    })
+  </script>
+</html>
+
