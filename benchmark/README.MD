@@ -40,7 +40,7 @@ Vue: Vue.js v2.6.10
 **Results:**
 
 #### Timing Metrics
-![alt text](img/metricas.png)
+![alt text](img/metrica.png)
 ------
 
 https://www.webpagetest.org/video/compare.php?tests=191204_P9_bb5825208e3a825ef36c67b6521d359a,191204_VP_d6472f5e11b54594fa5831b3cd9323d6,191204_1C_51055dec06624ab1c4ff25a5ac7d35a1
