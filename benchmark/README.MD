@@ -1,6 +1,6 @@
 **Vue vs React vs mls_mvP**
 
-![alt text](benchmark/img/filmstrip.png)
+![alt text](img/filmstrip.png)
 
 The tests were performed as follows:
 
