@@ -27,7 +27,7 @@ Vue: Vue.js v2.6.10
 
 **Test environment:**
 
-  OS: Linux 5.0 Ubuntu 18.04.3 LTS (Bionic Beaver)
+  OS: Linux 5.0 Ubuntu 18.04.3 LTS (Bionic Beaver)       
   CPU: (2) x64 Intel(R) Celeron(R) CPU  J1800  @ 2.41GHz       
   Browsers: Chrome: 78.0.3904.87 
 
@@ -39,18 +39,10 @@ Vue: Vue.js v2.6.10
 
 **Results:**
 
-#### Loading Sequence
-![alt text](img/sequenciaCarregamento.png)
-------
-
 #### Timing Metrics
 ![alt text](img/metricas.png)
 ------
 
-#### Requisitions
-![alt text](img/solicitacoes.png)
-------
+https://www.webpagetest.org/video/compare.php?tests=191204_P9_bb5825208e3a825ef36c67b6521d359a,191204_VP_d6472f5e11b54594fa5831b3cd9323d6,191204_1C_51055dec06624ab1c4ff25a5ac7d35a1
 
-#### Size (in bytes) 
-![alt text](img/bytes.png)
 
