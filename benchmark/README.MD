@@ -1,6 +1,6 @@
-**Benchmark : mls_mvP vs vue vs react : mvP was 20% faster !**
+## Benchmark : mls_mvP vs vue vs react : mvP was 20% faster !
 
-The tests were performed as follows:
+**The tests were performed as follows:**
 
 1- Create a component that renders a table.
 
