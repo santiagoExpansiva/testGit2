@@ -41,6 +41,7 @@ Vue: Vue.js v2.6.10
 
 #### Loading Sequence
 ![alt text](img/sequenciaCarregamento.png)
+------
 
 #### Timing Metrics
 ![alt text](img/metricas.png)
