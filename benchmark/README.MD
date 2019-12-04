@@ -2,9 +2,9 @@
 
 The tests were performed as follows:
 
-1- Create a component that renders a table
+1- Create a component that renders a table.
 
-2- Render an array with 99 objects, ex  ({"CustomerID":"*****","CompanyName":"*****","ContactName":"*****","ContactTitle":"*****","Address":"*****","City":"*****","Region":"*****","PostalCode":"*****","Country":"*****","Phone":"*****","Fax":"*****"})
+2- Render an array of 99 objects with 11 fields.
 
 3- The files were made using both cdn of their frameworks.
 
@@ -44,9 +44,11 @@ Vue: Vue.js v2.6.10
 
 #### Timing Metrics
 ![alt text](img/metricas.png)
+------
 
 #### Requisitions
 ![alt text](img/solicitacoes.png)
+------
 
 #### Size (in bytes) 
 ![alt text](img/bytes.png)
