@@ -1,5 +1,7 @@
 **Vue vs React vs mls_mvP**
 
+![alt text](https://https://github.com/santiagoExpansiva/testGit/branch/benchmark/img/filmstrip.png)
+
 The tests were performed as follows:
 
 1- Create a component that renders a list
