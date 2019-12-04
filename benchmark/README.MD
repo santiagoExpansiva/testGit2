@@ -1,32 +1,28 @@
 **Vue vs React vs mls_mvP**
 
-![alt text](img/filmstrip.png)
-
 The tests were performed as follows:
 
-1- Create a component that renders a list
+1- Create a component that renders a table
 
-2- Render an array with 10,000 ex objects ({cod: *****})
+2- Render an array with 99 objects, ex  ({"CustomerID":"*****","CompanyName":"*****","ContactName":"*****","ContactTitle":"*****","Address":"*****","City":"*****","Region":"*****","PostalCode":"*****","Country":"*****","Phone":"*****","Fax":"*****"})
 
-3- The files were made using both cdn and cli of their frameworks.
+3- The files were made using both cdn of their frameworks.
 
 4- The files were hosted on aws amazon.
 
 **Access Links:**
-
-React-Cli:   https://mlsamazons3testepublish.s3.amazonaws.com/reactCli/index.html       
-React-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/react3/example1.html
-
-Vue-Cli:    https://mlsamazons3testepublish.s3.amazonaws.com/vueCli/index.html         
-Vue-Cdn: https://mlsamazons3testepublish.s3.amazonaws.com/vue/example1.html
+    
+mls-mvP: https://mlsamazons3testepublish.s3.amazonaws.com/mvP/example3.html    
+    
+React: https://mlsamazons3testepublish.s3.amazonaws.com/react3/example3.html
+      
+Vue: https://mlsamazons3testepublish.s3.amazonaws.com/vue/example3.html
 
 **The versions used were:**
 
-React-Cli: 16.11.0
-React-Cdn:16
+React:16
 
-Vue-Cli:  @vue/cli: 4.0.5
-Vue-Cdn: Vue.js v2.6.10
+Vue: Vue.js v2.6.10
 
 
 **Test environment:**
@@ -38,26 +34,20 @@ Vue-Cdn: Vue.js v2.6.10
 
 **Sites used for benchmarking:**
 
-1- https://gtmetrix.com/
+1-  https://www.webpagetest.org/
 
-2-  https://www.webpagetest.org/
-
-3- https://www.testedeperformance.com/
 
 **Results:**
 
-1- https://www.webpagetest.org/
+#### Loading Sequence
+![alt text](img/sequenciaCarregamento.png)
 
-|  |Load Time|First Byte|Start Render|First Contentful Paint|Speed Index|Time|Requests|Bytes In|
-|--|---------|----------|------------|----------------------|-----------|----|--------|--------|
-|React|1.010s|0.245s|2.100s|2.051s|2.100s|1.010s|5|167 KB|
-|Vue|1.245s|0.295s|2.100s|2.150s|2.100s|1.245s|2|160 KB|
+#### Timing Metrics
+![alt text](img/metricas.png)
 
+#### Requisitions
+![alt text](img/solicitacoes.png)
 
-2-https://app.testedeperformance.com/
-
-|   |Server Response|Total size|Total time|First byte|Requisitions|
-|---|---------------|----------|----------|----------|------------|
-|React|0.173 s|167 KB|1.043 s|0.221 s|2|
-|Vue|0.166 s|160 KB|1.174 s|0.254 s|2|
+#### Size (in bytes) 
+![alt text](img/bytes.png)
 
