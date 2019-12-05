@@ -1,4 +1,4 @@
-<font size="2"> Benchmark mls_mvP vs vue vs react: mls_mvP is at least 20% faster!</font>
+<p sytle="font-size: 25px"> Benchmark mls_mvP vs vue vs react: mls_mvP is at least 20% faster!</p>
 
 #### Loading sequence
 ![alt text](img/metricas.png)
