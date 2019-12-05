@@ -1,4 +1,4 @@
-## Benchmark mls_mvP vs vue vs react: _mls_mvP is at least 20% faster!_
+## Benchmark mls_mvP vs vue vs react: __mls_mvP is at least 20% faster!__
 
 #### Loading sequence
 ![alt text](img/metricas.png)
