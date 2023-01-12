@@ -1,2 +1,1 @@
-# testGit
-test 2
+# testGit\nalteração feita via graphql\n
