@@ -1,2 +1,2 @@
 # testGit
-alteração feita via graphql, agora vai
+feito em runião
