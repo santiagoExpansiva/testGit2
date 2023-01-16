@@ -1,2 +1,2 @@
 # testGit
-alteraÃ§Ã£o feita via graphql 2
+teste alteração
