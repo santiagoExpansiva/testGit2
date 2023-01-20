@@ -5,7 +5,7 @@ class _100167_apiteste extends l2_html.Base {
 
 	public render(): HTMLElement {
 
-		super.createEL('null'); // create this.el t
+		super.createEL('teste'); // create this.el
 		l2_fieldTypes.renderAllFields(this.el, this);
 		return this.el;
 
